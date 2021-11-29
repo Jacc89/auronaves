@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alquiler.component.css']
 })
 export class AlquilerComponent implements OnInit {
+
+  viaje = {
+    destino: '',
+    fecha_salida: '',
+    fecha_llegada: '',
+    pasajeros: ''
+
+  }
   
 
   constructor() { }
@@ -15,6 +23,8 @@ export class AlquilerComponent implements OnInit {
 
   alquiler(){
     console.log('estoy en el alquiler');
+    console.log(this.viaje);
+    
     
   }
 

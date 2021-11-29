@@ -2,9 +2,12 @@
     <form class="custom-form" >
       <h1>Login</h1>
       <input type="email"  name="email" placeholder="Email" required="required"
-      />
+      [(ngModel)]="usuario.correo" />
       <input   type="password"  name="password" placeholder="Password" required="required"
-      />
-      <button type="submit" (click)="login()">Login</button>
+      [(ngModel)]="usuario.password" />
+      <button type="submit" class="btn btn-primary mb-2 color" (click)="login()">Login</button>
+      <button type="submit" class="btn btn-danger mb-2"  (click)="IngresarGoogle()">Ingresar con Google</button>
+      <label for="" class="text-center mb-2">Aun no tienes cuenta? <a href="#"> Registrate</a></label>
+      <button class="btn btn-info mb-2"  (click)="logout()">Logout</button>
     </form>
   </div>

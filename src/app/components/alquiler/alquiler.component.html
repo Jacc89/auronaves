@@ -1,19 +1,24 @@
-<div class="register">
-    <form class="custom-form" method="post">
-      <h1>Aquiler</h1>
-      <label for=""><b>Destino</b></label>
-      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-        <option selected>Seleccione Destino</option>
-        <option value="cartagena">Cartagena</option>
-        <option value="medellin">Medellin</option>
-        <option value="cali">Cali</option>
-      </select>
+<div class="register contaier">
+  <h1>Aquiler</h1>
+    <form class="custom-form  contaier" method="post">
+      <div class="">
+        <label class="form-label"><b>Destino</b></label>
+        <input type="text " [(ngModel)]="viaje.destino" name="destino" placeholder="Escriba el destino" required="required">
+      <!-- <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" >
+        <option selected [(ngModel)]="viaje.destino">Seleccione Destino</option>
+        <option value="cartagena" [(ngModel)]="viaje.destino">Cartagena</option>
+        <option value="medellin" [(ngModel)]="viaje.destino">Medellin</option>
+        <option value="cali" [(ngModel)]="viaje.destino">Cali</option>
+      </select> -->
       <label for=""><b> Fecha de salida</b></label>
-      <input type="date" name="fecha_salida" placeholder="Fecha de salida" required="required"/>
+      <input type="date" name="fecha_salida" placeholder="Fecha de salida" required="required" [(ngModel)]="viaje.fecha_salida"/>
       <label for=""><b> Fecha llegada</b></label>
-      <input type="date" name="fecha_llegada" placeholder="Fecha de llegada" required="required"/>
+      <input type="date" name="fecha_llegada" placeholder="Fecha de llegada" required="required" [(ngModel)]="viaje.fecha_llegada"/>
       <label for=""><b> Pasajeros</b></label>
-      <input type="number" name="pasajeros" placeholder="Pasajeros" required="required"/>
+      <input type="number" name="pasajeros" placeholder="Pasajeros" required="required" [(ngModel)]="viaje.pasajeros"/>
+
+      </div>
+      
 
       <button type="submit" (click)="alquiler()">Guargar</button>
     </form>

@@ -1,12 +1,12 @@
 export class Login{
     id:number;
-    correo:Date;
-    password: number;
+    correo:string;
+    password: string;
     
     constructor(
                   id:number,
-                  correo:Date,
-                  password: number){
+                  correo:string,
+                  password: string){
   
       this.id = id,
       this.correo = correo,
