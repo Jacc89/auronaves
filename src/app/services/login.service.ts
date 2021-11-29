@@ -9,7 +9,8 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
-  // login(usuario:any):Observable<any>{
-  //   // return this.http.post('')
-  // }
+  login(usuario:any){
+    console.log(usuario);
+    
+  }
 }

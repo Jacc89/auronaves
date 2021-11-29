@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alquiler.component.css']
 })
 export class AlquilerComponent implements OnInit {
+  
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  alquiler(){
+    console.log('estoy en el alquiler');
+    
   }
 
 }

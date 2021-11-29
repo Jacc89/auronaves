@@ -1,1 +1,20 @@
-<p>alquiler works!</p>
+<div class="register">
+    <form class="custom-form" method="post">
+      <h1>Aquiler</h1>
+      <label for=""><b>Destino</b></label>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>Seleccione Destino</option>
+        <option value="cartagena">Cartagena</option>
+        <option value="medellin">Medellin</option>
+        <option value="cali">Cali</option>
+      </select>
+      <label for=""><b> Fecha de salida</b></label>
+      <input type="date" name="fecha_salida" placeholder="Fecha de salida" required="required"/>
+      <label for=""><b> Fecha llegada</b></label>
+      <input type="date" name="fecha_llegada" placeholder="Fecha de llegada" required="required"/>
+      <label for=""><b> Pasajeros</b></label>
+      <input type="number" name="pasajeros" placeholder="Pasajeros" required="required"/>
+
+      <button type="submit" (click)="alquiler()">Guargar</button>
+    </form>
+  </div>
