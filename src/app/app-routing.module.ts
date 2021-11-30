@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'registro', component:RegisterComponent },
   { path: 'home', component: HomeComponent },
   { path: 'alquiler', component: AlquilerComponent },
-  { path: '', redirectTo: 'alquiler', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 
   
 ];

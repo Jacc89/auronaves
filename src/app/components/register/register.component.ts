@@ -31,19 +31,19 @@ export class RegisterComponent implements OnInit {
  
   registro() {
     console.log(this.form);
-    // this.newRegistro.emit(this.form);
-    // this.resetForm(); 
+    this.newRegistro.emit(this.form);
+    this.resetForm(); 
   }
-  // resetForm(){
+  resetForm(){
 
-  //   const form={  
-  //     nombre : '',
-  //    apellido: '',
-  //    correo: '',
-  //    dirreccion: '',
-  //    password: '',
-  //    telefono: ''
-  // }
-  // }
+    const form={  
+      nombre : '',
+     apellido: '',
+     correo: '',
+     dirreccion: '',
+     password: '',
+     telefono: ''
+  }
+  }
 
 }
