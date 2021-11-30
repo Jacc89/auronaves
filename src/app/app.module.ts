@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from "@angular/fire/compat";
+// import { AngularFirestore } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -51,7 +52,8 @@ const firebaseConfig = {
     FormsModule,
     HttpClientModule,
     NgbModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebase),
+    
   
   ],
   providers: [],

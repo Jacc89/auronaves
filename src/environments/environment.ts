@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
+  firebase: {
     apiKey: "AIzaSyD3X-GB_Op2VRXyndSeekGx3r5FBfrz8BA",
     authDomain: "prueba-angular-7d7a4.firebaseapp.com",
     projectId: "prueba-angular-7d7a4",
@@ -13,6 +13,16 @@ export const environment = {
     appId: "1:390436100692:web:be32a48bfbe25fc63cebc1",
     measurementId: "G-2PM57JCBNX"
   }
+
+  // firebaseUser : {
+  //   apiKey: "AIzaSyD3X-GB_Op2VRXyndSeekGx3r5FBfrz8BA",
+  //   authDomain: "prueba-angular-7d7a4.firebaseapp.com",
+  //   projectId: "prueba-angular-7d7a4",
+  //   storageBucket: "prueba-angular-7d7a4.appspot.com",
+  //   messagingSenderId: "390436100692",
+  //   appId: "1:390436100692:web:7b21f4f480384eac3cebc1",
+  //   measurementId: "G-MQQ07L88Q6"
+  // }
 };
 
 /*

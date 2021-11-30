@@ -16,6 +16,7 @@ body{
   h1 {
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   .custom-form {
     min-width: 300px;

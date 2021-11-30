@@ -1,1 +1,14 @@
-<p>listar works!</p>
+<div *ngIf="listForm.length === 0" class="card  bg-light" >
+    <div class="card-body">
+      <h5 class="cars-title text-center">No hay citas para mostrar.</h5>
+    </div>
+  </div>
+  <div class="card mb-2 fondo" *ngFor="let viaje of listForm; let i = index">
+    <div class="card-body">
+      <p class="card-text"><span>Nombre y Apellido: </span>{{ viaje.nombre }} {{ viaje.apellido }}</p>
+      <p class="card-text"><span>Fecha: </span>{{ viaje.Apellido }}</p>
+      <p class="card-text"><span>Hora: </span>{{ viaje.hora }}</p>
+      <p class="card-text"><span>Sintomas: </span>{{ viaje.sintoma }}</p>
+      <!-- <button type="button" class="btn btn-danger btn-block" style="width: 100%;" (click)="eliminar(i)">Eliminar</button> -->
+    </div>
+  </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-listar',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar.component.css']
 })
 export class ListarComponent implements OnInit {
+  @Input() listForm : any ;
+  @Output() eliminar = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  // eliminar(index:number){
+  //   this.eliminar.emit(index)
+  // }
 
 }
